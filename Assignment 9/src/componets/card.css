@@ -1,0 +1,29 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #2d2e36;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.card_header {
+  color: white;
+  font-size: 2rem;
+}
+.card_content {
+  font-size: large;
+  color: white;
+}
+.card_button {
+  background-color: #da18a3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+}
