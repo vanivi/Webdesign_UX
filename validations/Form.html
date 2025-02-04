@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+      }
+      main {
+        padding: 50px;
+      }
+	  .selectCheckbox {
+		display: none;
+	   }
+		.textWhy {
+			display: none;
+		}
+			table {
+				margin: auto;
+				text-align: center;
+				border-collapse: collapse;
+				width: 100%;				
+			}
+
+			table, th, td { 
+				border: 2px solid black;
+				padding: 6px;
+				font-size: large;
+			}
+
+			table th{
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: center;
+				background-color: aquamarine;
+				color: black;
+			}
+
+			.table-header {
+				text-align: center;
+				font-size: 24px;
+			}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feedback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form id="myForm"
+          name="myForm"
+          form
+          method="post"
+          novalidate
+          action="/action_page.php"
+          onsubmit="return validateForm()"
+        >
+          <label>Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="miss"
+            required="required"
+          />Miss
+          <input
+            type="radio"
+            name="title"
+            id="mr"
+            value="mr"
+            required="required"
+          />Mr.
+          <input
+            type="radio"
+            name="title"
+            id="mrs"
+            value="mrs"
+            required="required"
+          />Mrs. <br /><br />
+          <label for="firstName">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <br /><br />
+
+          <div id="error_firstName" style="display: none; color: red">
+            Enter a valid First Name. Incorrect name entered
+            <br /><br />
+          </div>
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <br /><br />
+
+          <div id="error_lastName" style="display: none; color: red">
+            Enter a valid Last Name. Incorrect name entered
+            <br /><br />
+          </div>
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="yourname@northeastern.edu"
+          />
+          <br /><br />
+
+          <div id="error_emailId" style="display: none; color: red">
+            Please enter a valid Email. Entered email is incorrect.
+            <br /><br />
+          </div>
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="xxx-xxx-xxxx"
+          />
+          <br /><br />
+
+          <div id="error_phoneNumber" style="display: none; color: red">
+            Kindly enter a valid phone number. Entered phone number is
+            incorrect.
+            <br /><br />
+          </div>
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            placeholder="address"
+          />
+          <br /><br />
+          <div id="errors_streetAddress1" style="display: none; color: red">
+            Kindly enter the valid address.
+          </div>
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="address"
+          />
+          <br /><br />
+
+          <label for="city">City*:</label>
+          <input type="text" name="city" id="city" placeholder="city" />
+          <br /><br />
+          <div id="errors_city" style="display: none; color: red">
+            Kindly enter the City.
+          </div>
+
+          <label for="state">State*:</label>
+          <input type="text" name="state" id="state" placeholder="state" />
+          <br /><br />
+          <div id="errors_state" style="display: none; color: red">
+            Please enter the State.
+          </div>
+
+          <label for="zipcode">Zip Code*:</label>
+          <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+          <br /><br />
+
+          <div id="error_zipcode" style="display: none; color: red">
+            Kindly enter a valid Zip Code. Entered code is incorrect.
+            <br /><br />
+          </div>
+
+          <label for="hear">How did you hear*:</label>
+          <input type="checkbox" name="source" value="facebook" /> Facebook
+          <input type="checkbox" name="source" value="google" /> Google
+          <input type="checkbox" name="source" value="yelp" /> Yelp <br /><br />
+
+          <label for="music">Music*:</label>
+          <select name="music" id="music">
+            <option value="select">Select your Favourite Music Genre</option>
+            <option value="jazz">Jazz</option>
+            <option value="bollywood">Bollywood</option>
+            <option value="kpop">Kpop</option>
+            <option value="rock">Rock</option>
+            <option value="rhythm">Rhythm and blues</option>
+          </select>
+
+          <div id="selectCheckbox" class="selectCheckbox"><br /></div>
+
+          <div id="textWhy" class="textWhy">
+            <br />
+            <label for="musicComment">Elaborate your choice*: </label>
+            <textarea
+              name="musicComment"
+              id="musicComment"
+			  placeholder="Type here.."
+              cols="25"
+              rows="7"
+            ></textarea>
+            <br /><br />
+          </div>
+		</br><br>
+
+		<label for="comments">Comments*:</label>
+          <textarea
+            name="text"
+            id="comments"
+            placeholder="Your comments"
+            rows="5"
+            cols="25"
+          ></textarea>
+          <br /><br />
+
+          <input type="Submit" value="Submit" id="Submit" />
+          <input type="Reset" id="Reset"/>
+          <br /><br />
+        </form>
+      </main>
+    </div>
+
+	<br><br><br><br>
+ 
+ <div class="table-container">
+	<h2 class="table-header">Submitted Data</h2><br><br>
+	<table id="tableData">
+		<tr>
+			<th>Name</th>
+			<th>Email ID</th>
+			<th>Phone Number</th>
+			<th>Street Address 1</th>
+			<th>Street Address 2</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip Code</th>
+			<th>Comments</th>
+			<th>Music</th>
+		</tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <br /><br />
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
