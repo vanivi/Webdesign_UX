@@ -1,0 +1,83 @@
+body{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    letter-spacing: 5px;
+}
+header{
+    display: inline-block;
+}
+.navbar{
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+    background-color: #7BC2BC;
+    color: #4c9e9e;
+    text-decoration: none;
+    padding: 10px;
+    width: 100vw;
+}
+.navbar li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.paintings{
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.paintings p{
+    font-size: x-large;
+    margin-left: 10px;
+}
+.form{
+    width: 340px;
+    height: 440px;
+    border-radius: 9px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+p:before{
+    content:attr(type); 
+    display: block;
+    margin: 28px 0 0;
+    font-size: 15px;
+}
+.button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: #e06377;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover{
+    background:#c83349;
+}
+footer{
+    padding: 10px 20px;
+    background: #484f4f;
+    color: white;
+    width: 100vw;
+}
+.contact-page{
+    display: flex;
+    justify-content: center;
+}
+.contact-page p{
+    text-align: left;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vivi Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/dress.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">       
+        </div>
+        <div class="header">
+        <div class="row">
+            <div class="col-2">
+                <h1> A Portal to Whimsical Dresses!</h1>
+                <p> Inspired by the fairytales and princess stories with a touch of magic <br> Now customize your own dresses</p>
+                <button type="button" class="btn"> Explore Now! </a>
+            </div>
+            <div class="col-2">
+                <img src="images/dress.png">
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--------- Featured stuff --------->
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title"> Categories </h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/cat2.jpg">
+                    <h3> Casuals </h3>
+                </div>
+                <div class="col-3">
+                    <img src="images/cat1.jpg">
+                    <h3> Wedding </h3>
+                </div>
+                <div class="col-3">
+                    <img src="images/cat3.jpg">
+                    <h3> Formal </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Featured stuff --------->
+    <div class="small-container">
+        <h2 class="title">Featured Dresses</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/prod1.jpeg">
+                <h4>Sea Green Butterfly</h4>
+                <p> $850.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod2.jpg">
+                <h4>Starry Glitter Blue</h4>
+                <p> $800.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod4.jpg">
+                <h4>Elegant Belle Yellow</h4>
+                <p> $900.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod3.jpg">
+                <h4>Midnight Blue Cherry</h4>
+                <p> $750.00 </p>
+            </div>
+        </div>        
+        <div class="small-container">
+        <table>
+            <h2 class="title"> Check Out </h2>
+            <tr>
+                <th> Product </th>
+                <th> Quantity </th>
+                <th> Subtotal </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/prod3.jpg">
+                        <div>
+                            <p> Midnight Blue Cherry </p>
+                            <small> Price: $700.00 </small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>                
+                <td><input type="number" value="1"></td>
+                <td>$700.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/prod4.jpg">
+                        <div>
+                            <p> Elegant Belle Yellow </p>
+                            <small> Price: $950.00 </small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>                
+                <td><input type="number" value="1"></td>
+                <td>$950.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/prod2.jpg">
+                        <div>
+                            <p> Starry Glitter Blue </p>
+                            <small> Price: $800.00 </small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>                
+                <td><input type="number" value="1"></td>
+                <td>$800.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr> 
+                    <td>Subtotal</td>
+                    <td>$2450.00</td>
+                </tr>
+                <tr> 
+                    <td>Tax</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr> 
+                    <td>Total</td>
+                    <td>$2500.00</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p> Company @ ViviStore. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
