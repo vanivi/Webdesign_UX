@@ -1,0 +1,15 @@
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background: $btn-color;
+  margin: 3px;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+.btn-primary {
+  @extend %btn;
+  @include set-bg($btn-color);
+}
