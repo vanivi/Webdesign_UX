@@ -1,0 +1,53 @@
+body {
+  margin: 35px;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgb(207, 192, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+body input {
+  border: 2px solid rgb(66, 133, 244);
+  box-shadow: 0 2px 7px rgb(1, 100, 149);
+  font-size: 20px;
+}
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  background: white;
+  padding: 65px;
+  box-sizing: border-box;
+  border: 2px solid rgb(66, 133, 244);
+  box-shadow: 0 2px 7px rgb(1, 100, 149);
+}
+.container input {
+  padding: 0px;
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(66, 133, 244);
+}
+.container2 input {
+  background: #fff;
+}
+.container2 button {
+  padding: 7px 15px;
+  text-align: center;
+  box-shadow: none;
+  margin: 8px;
+  border-radius: 18px;
+  font-size: 20px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(253, 83, 157);
+  color: #fff;
+  border: none;
+}

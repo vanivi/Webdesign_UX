@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="submit_form" action="calc.html">
+        <div>
+          <input type="text" id="form_name" name="name" required="" />
+          <span class="error_form" id="error_name"></span>
+          <label> Username </label>
+        </div>
+        <br /><br />
+        <div>
+          <input type="email" id="form_email" name="" required="" />
+          <span class="error_form" id="error_email"></span>
+          <label>Email id</label>
+        </div>
+        <br /><br />
+        <div>
+          <input type="password" id="form_password" name="" required="" />
+          <span class="error_form" id="error_pass"></span>
+          <label>Password</label>
+        </div>
+        <br /><br /><br />
+        <input type="submit" id="button" value="Submit" name="" />
+        <br />
+      </form>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
